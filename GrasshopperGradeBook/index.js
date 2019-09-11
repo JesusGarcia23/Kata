@@ -1,3 +1,4 @@
+
 function getGrade(s1, s2, s3) {
     let total = (s1 + s2 + s3) / 3;
     if(total >= 90 && total <= 100){
