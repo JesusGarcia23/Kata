@@ -22,3 +22,4 @@ function solution(str){
       }
     }
   }
+}
