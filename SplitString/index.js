@@ -6,6 +6,7 @@ function solution(str){
     if(str === ""){
       return myArr;
     }
+    
   else{
     while(flag) {
   
