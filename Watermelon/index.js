@@ -11,7 +11,8 @@
 //For sure, each of them should get a part of positive weight.
 
 // Task
-// Given an integral number of watermelons w (1 ≤ w ≤ 100; 1 ≤ w in Haskell), check whether Pete and Billy can divide the melons so that each of them gets an even amount.
+// Given an integral number of watermelons w (1 ≤ w ≤ 100; 1 ≤ w in Haskell), 
+// check whether Pete and Billy can divide the melons so that each of them gets an even amount.
 
 // Examples
 // divide(2) === false // 2 = 1 + 1
