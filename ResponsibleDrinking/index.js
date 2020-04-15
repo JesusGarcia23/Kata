@@ -27,6 +27,16 @@
 
 //To keep the things simple, we'll considere that any "numbered thing" in the string is a drink. Even "1 bear" => "1 glass of water" or "1 chainsaw and 2 pools" => "3 glasses of water"...
 
+//VERSION 2
+function hydrate(s) {
+  return s.match(/\d/g).reduce((counter, value) => {
+     return counter + Number(value)
+}, 0) + (s.match(/\d/g).length === 1 && s.match(/\d/g)[0] === "1" ? " glass " : " glasses ") + "of water";
+}
+
+
+
+// VERSION 1
 function hydrate(s) {
     let qty = s.match(/\d/g).reduce((counter, value) => {
       return counter + Number(value)
