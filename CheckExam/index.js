@@ -7,6 +7,16 @@
 
 // If the score < 0, return 0.
 
+// VERSION 2
+function checkExam(array1, array2) {
+    const result = array1.reduce((counter, value, index) => {
+      return counter += value === array2[index] ? 4 : array2[index] === "" ? 0 : -1;
+    }, 0);
+    return result > 0 ? result : 0;
+  }
+
+
+// VERSION 1
 function checkExam(array1, array2) {
   const value = array1.reduce((counter, value, index) => {
     if(value === array2[index]) {
